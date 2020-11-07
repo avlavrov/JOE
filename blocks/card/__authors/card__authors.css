@@ -1,0 +1,11 @@
+.card__authors {
+    font-size: 10px;
+    line-height: 18px;
+    font-style: italic;
+    max-height: 18px;
+    overflow: hidden;
+  }
+
+  .card__authors:hover {
+    max-height: 32px;
+  }

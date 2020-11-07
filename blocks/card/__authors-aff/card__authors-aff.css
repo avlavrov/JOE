@@ -1,0 +1,14 @@
+.card__authors-aff {
+    font-size: 10px;
+    line-height: 16px;
+    font-style: italic;
+    max-height: 16px;
+    color: grey;
+    overflow: hidden;
+  }
+
+  @media (hover: hover) {
+    .card__authors-aff:hover {
+      max-height: 32px;
+    }
+  }

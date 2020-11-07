@@ -1,0 +1,42 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/normalize-additional.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/overlay/overlay.css);
+@import url(../blocks/menu/menu.css);
+@import url(../blocks/menu-link/menu-link.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/content/__cards/content__cards.css);
+@import url(../blocks/cards/cards.css);
+/* Card */
+@import url(../blocks/card/card.css);
+@import url(../blocks/card/__article-date/card__article-date.css);
+@import url(../blocks/card/__article-type/card__article-type.css);
+@import url(../blocks/card/__authors/card__authors.css);
+@import url(../blocks/card/__authors-aff/card__authors-aff.css);
+@import url(../blocks/card/__image/card__image.css);
+@import url(../blocks/card/__link/card__link.css);
+@import url(../blocks/card/__text/card__text.css);
+@import url(../blocks/card/__title/card__title.css);
+/* Footer */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/submitt-button/submitt-button.css);
+
+@import url(../blocks/header-title/header-title.css);
+
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);
+@import url(..);

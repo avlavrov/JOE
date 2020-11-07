@@ -1,0 +1,12 @@
+.content{
+  width: 100%;
+  /* display: flex;
+  justify-content: center; */
+  padding: 20px;
+	}
+
+@media all and (max-width: 540px) {
+  .content {
+    padding: 7px 0;
+  }
+}

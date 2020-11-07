@@ -1,0 +1,8 @@
+/* This section is the time-dependent endless collection of the cards */
+.cards {
+  max-width: 1240px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-items: center;
+}

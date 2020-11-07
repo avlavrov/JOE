@@ -2,7 +2,7 @@ body, h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
   font-size: 100%;
   font-weight: normal;
-  
+
 }
 
 body {
@@ -16,124 +16,108 @@ body {
   justify-content: space-between
 }
 
-.header-title {
+.header__title {
+  padding: 10px;
+  min-width: 140px;
+  border: 1px solid orange;
+}
+
+.header__link {
   font-size: 20px;
   font-weight: bold;
-  padding: 10px;
-  border: 1px solid orange;
+  color: black;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  text-decoration: underline;
 }
 
 .menu{
   display: flex;
   justify-content: center;
+  min-width: 140px;
   min-height: 55px;
   align-items: center;
   flex-wrap: wrap;
   border: 1px solid orange;
 }
 
+.menu-link{
+	margin: auto 15px;
+	text-decoration: none;
+  color: black;
+}
+
 .menu-link:hover {
   text-decoration: underline;
 }
 
-.menu-link{
-	margin-right: 25px;
-	text-decoration: none;
-  color: black;
-  	
-}
-
-.content{
-	font-size: 0;
-  width: 100vw;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-	margin: 50px auto 25px;	
-	}
-	
-.card {   
-  width: 350px;
-  height: 560px;
-  overflow: hidden; 
+.article {
+  max-width: 600px;
   padding: 20px;
-  box-shadow: 4px 4px 5px rgba(0, 0, 0, .3);
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   align-items: flex-start;
 }
-.card:hover {
-  border: 1px solid grey;
-}
 
-.card__link {
-  text-decoration: none;
-  color: black;
-}
 
-.card__article-type{
+.article__type{
 	font-size: 10px;
 	font-weight: bold;
 	color: grey;
   display: inline-block;
+  padding: 5px;
   margin-right: 5px;
 }
 
-.card__article-date{
+.article__acc-date{
 	font-size: 10px;
 	font-weight: bold;
-	display: inline-block;	
+	display: inline-block;
 }
 
-.card__article-date::before {
+.article__acc-date::before {
   content: "Published: ";
 }
 
-.card__image{width: 100%;
-height: 150px;
-margin: 5px auto 5px}
-
-.card__title {
+.article__title {
   font-size: 16px;
-  font-weight: 700;  
+  font-weight: 700;
+  padding: 10px 5px 5px;
 }
 
-.card__authors {
-  font-size: 10px;	
+.article__authors {
+  font-size: 10px;
   line-height: 14px;
-  font-style: italic;  
+  font-style: italic;
   max-height: 14px;
   overflow: hidden;
+  padding: 3px 5px 3px;
 }
 
-.card__authors:hover {
-  min-height: 28px;
-  max-height: 70px;
-  overflow-y: scroll; 
-}
-
-.card__authors-aff {
-  font-size: 10px;	
+.article__authors-aff {
+  font-size: 10px;
   line-height: 14px;
-  font-style: italic;  
+  font-style: italic;
   max-height: 14px;
-  color: grey;  
+  color: grey;
   overflow: hidden;
+  padding: 3px 5px 3px;
 }
 
-.card__authors-aff:hover {
-  min-height: 28px;
-  max-height: 70px;
-  overflow-y: scroll;  
-}
-
-.card__text {
+.article__text {
   font-size: 14px;
   line-height: 16px;
-  max-height: 340px;
-  overflow: hidden;
-  overflow-y: scroll;
+  padding: 5px;
 }
+
+.article__abstract {
+  font-size: 14px;
+  line-height: 16px;
+  padding: 5px;
+}
+
 .footer {
   height: 100px;
   background-color: black;
