@@ -1,8 +1,10 @@
 .menu{
     background-color: #eee;
+    padding: 5px 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     min-height: 55px;
     align-items: center;
     flex-wrap: wrap;
+    transition: linear 0.3s;
   }

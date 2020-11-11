@@ -1,8 +1,15 @@
 /* This section is the time-dependent endless collection of the cards */
 .cards {
-  max-width: 1240px;
+  max-width: calc(400px*3 + 20px*2);
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-items: center;
+}
+
+@media all and (max-width: calc(350px*3 + 20px*2 + 20px*2)) {
+  .cards {
+    max-width: calc(400px*2 + 20px);
+    row-gap: 10px;
+  }
 }

@@ -1,6 +1,7 @@
 .card__text {
-    font-size: 13px;
-    line-height: 16px;
-    max-height: 340px;
-    overflow: hidden;
-  }
+  font-size: 13px;
+  line-height: 16px;
+  /* display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 20; */
+}

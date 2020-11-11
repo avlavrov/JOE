@@ -1,7 +1,5 @@
 .card__article-date{
-	font-size: 10px;
 	font-weight: bold;
-	display: inline-block;
 }
 
 .card__article-date::before {

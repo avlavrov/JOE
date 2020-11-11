@@ -1,9 +1,15 @@
   .menu-link{
       margin-right: 25px;
       text-decoration: none;
-    color: black;        
+      font-weight: bold;
+    color: rgb(83, 83, 83);
+    transition: linear 0.3s;
+  }
+  .menu-link:last-of-type {
+    margin-right: 0;
+    margin-left: auto;
   }
 
   .menu-link:hover {
-    text-decoration: underline;
+    color: black;
   }
