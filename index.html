@@ -14,7 +14,7 @@
 		<div class="overlay">
 			<h1 class="header__title">Journal of Everything<br>
 				<i>peer-reviewed</i></h1>
-			<p class="header__subtitle">The only and forever free place to publish and to read scientific reports after their carefull peer-review by the research community</p>
+			<p class="header__subtitle">The only and forever free place to publish and to read scientific reports after their carefull peer-review by the research community.<br><br><a href='#'>Log in to publish, review, comment and configure.</a></a></p>
 		</div>
 	</header>
 	<nav class='menu'>
@@ -22,7 +22,7 @@
 		<a href='#' class='menu-link'>Topic</a>
 		<!-- Top cited, top rating, top read etc -->
 		<a href='#' class='menu-link'>Top</a>
-		<a href='#' class='menu-link'>Log in</a><!-- Or log out -->
+		<a href='#' class='menu-link login-open'>Log in</a><!-- Or log out -->
 		<a href='#' class='menu-link'>About</a>
 
 	</nav>
@@ -364,6 +364,63 @@
 		<p class="footer__copyright">Alexander Lavrov production &copy; 2020</p>
 	</footer>
 </body>
-<!--script src='script.js'></script-->
+<!-- Popups -->
+  <!-- Login popup -->
+  <div class="popup popup-login">
+    <div class="popup__container">
+      <h2 class="popup__title">Enter login details</h2>
+      <form action="#" name="user-login" class="popup__form">
+        <fieldset class="popup__form-set">
+          <input type="email" name="email" class="popup__input popup__input_type_email" placeholder="E-mail" required>
+          <span class="popup__error-message email-error"></span>
+          <input type="password" name="password" class="popup__input popup__input_type_password" placeholder="JOE passwords are at least 6 symbols in length" minlength=6>
+					<span class="popup__error-message password-error"></span>
+					<p class="popup__register-link">Don't have an account? <a href="#" class="popup__register-link">Register</a></p>
+        <button type="submit" class="popup__button popup__button_user-login">Login</button>
+      </fieldset>
+      </form>
+      <button type="button" class="popup__container-close popup-close-login"></button>
+    </div>
+  </div>
+  <!-- new place popup -->
+  <div class="popup popup-place">
+    <div class="popup__container">
+      <h2 class="popup__title">Новое место</h2>
+      <form action="#" name="new-place" class="popup__form">
+        <fieldset class="popup__form-set">
+          <input type="text" name="place-name" class="popup__input popup__input_type_name" placeholder="Название" required minlength=2 maxlength=30>
+          <span class="popup__error-message place-name-error"></span>
+          <input name="place-foto-link" class="popup__input popup__input_type_job"
+            placeholder="Ссылка на картинку" required type="url">
+          <span class="popup__error-message place-foto-link-error"></span>
+        <button type="submit" class="popup__button popup__button_place-save">Создать</button>
+      </fieldset>
+      </form>
+      <button type="button" class="popup__container-close popup-close-place"></button>
+    </div>
+  </div>
 
+  <!-- Templates -->
+  <!-- place template -->
+  <template id="place-template">
+    <!--Card 1-->
+			<article class="card">
+				<div class="card__contents">
+					<div class="card__header">
+						<p class="card__article-type"></p>
+						<p class="card__article-date"></p>
+					</div>
+					<a class="card__link" href="article.html">
+						<img class="card__image" alt="" src="#">
+						<h2 class="card__title"></h2>
+						<p class="card__authors"></p>
+						<p class="card__authors-aff"></p>
+						<p class="card__text"></p>
+					</a>
+				</div>
+			</article>
+  </template>
+	<script src="./scripts/articles.js"></script>
+  <script src="./scripts/script.js"></script>
+	<script src="./scripts/validate.js"></script>
 </html>
