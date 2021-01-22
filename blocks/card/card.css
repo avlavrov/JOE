@@ -4,14 +4,14 @@
   /* max-height: 560px; */
   box-sizing: border-box;
   padding: 12px;
-  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .3);
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, .3);
   transition: 0.3s linear;
   border-radius: 7px;
 }
 
 @media (hover: hover) {
   .card:hover {
-    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, .5);
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, .5);
 
   }
 }
