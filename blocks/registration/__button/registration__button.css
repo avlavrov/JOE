@@ -1,4 +1,4 @@
-.popup__button {
+.registration__button {
   width: 100%;
   align-self: center;
   min-width: 320px;
@@ -17,13 +17,13 @@
   transition: 0.2s linear;
 }
 
-.popup__button:hover {
+.registration__button:hover {
   opacity: 0.9;
   cursor: pointer;
 }
 
 @media all and (max-width: 470px) {
-  .popup__button {
+  .registration __button {
     width: calc(238/320*100vw);
     min-width: 200px;
     min-height: 46px;

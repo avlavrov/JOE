@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./pages/index.css">
+	<link rel="icon" type="image" href="https://code.s3.yandex.net/web-code/rules-favicon.ico">
+	<title>Journal of Everything</title>
+</head>
+
+<body class="main-page">
+	<header>
+		<div class="overlay">
+			<h1 class="header__title">Journal of Everything<br>
+				<i>peer-reviewed</i>
+			</h1>
+		</div>
+	</header>
+
+	<main class="registration">
+		<h2 class="registration__title">Sign up</h2>
+		<form action="#" name="register" class="registration__form">
+			<div class="registration__grouping-fields">
+				<input type="text" name="first-name" class="registration__input registration__input_first-name"
+					placeholder="First name" required>
+				<span class="popup__error-message first-name-error"></span>
+				<input type="text" name="middle-name" class="registration__input registration__input_middle-name"
+					placeholder="Middle name">
+				<span class="popup__error-message middle-name-error"></span>
+			</div>
+			<input type="text" name="family-name" class="registration__input registration__input_family-name"
+				placeholder="Surname" required>
+			<span class="popup__error-message family-name-error"></span>
+			<div class="registration__grouping-fields">
+				<input type="tel" name="mobile" class="registration__input registration__input_mobile"
+					placeholder="Mobile phone" required>
+				<span class="popup__error-message mobile-error"></span>
+				<input type="email" name="email" class="registration__input registration__input_type_email" placeholder="E-mail"
+					required>
+				<span class="popup__error-message email-error"></span>
+			</div>
+			<div class="registration__grouping-fields">
+				<input type="password" name="password" class="registration__input registration__input_type_password"
+					placeholder="Password" minlength=6 required>
+				<span class="popup__error-message password-error"></span>
+				<input type="password" name="password" class="registration__input registration__input_type_password-repeated"
+					placeholder="Repeat password" minlength=6 required>
+				<span class="popup__error-message password-repeat-error"></span>
+			</div>
+			<div class="registration__grouping-fields">
+				<input type="text" name="company" class="registration__input registration__input_type_company"
+					placeholder="Company/Institution">
+				<span class="popup__error-message company-error"></span>
+				<input type="text" name="degree" class="registration__input registration__input_type_degree"
+					placeholder="Academic degree" minlength=2>
+				<span class="popup__error-message degree-error"></span>
+			</div>
+			<div class="registration__grouping-fields">
+				<input type="text" name="interests" class="registration__input registration__input_type_interests"
+					placeholder="Choose your area of expertise" required>
+				<span class="popup__error-message interests-error"></span>
+				<input type="text" name="keyword" class="registration__input registration__input_type_keyword"
+					placeholder="Enter keywords additional to expertise">
+				<span class="popup__error-message keyword-error"></span>
+			</div>
+			<label class="registration__checkbox-label">
+				<input type="checkbox" name="reviewer"
+					class="registration__checkbox registration__input_type_reviewer" checked>
+				<span>I agree to recieve requests for article review</span>
+				<!-- <div class="registration__checkbox-style"></div> -->
+			</label>
+
+			<p class="registration__notice">By clicking Sign Up, you agree to our <a href="#"
+					class="registration__notice">Terms</a>, <a href="#" class="registration__notice">Data Policy</a> and <a
+					href="#" class="registration__notice">Cookie Policy</a>. You may receive SMS notifications from us and can
+				opt out at any time.</p>
+			<button type="submit" class="registration__button">Sign Up</button>
+		</form>
+	</main>
+	<footer class="footer">
+		<p class="footer__copyright">Alexander Lavrov production &copy; 2020</p>
+	</footer>
+</body>
+<script type='module' src="./scripts/registration.js"></script>
+
+</html>

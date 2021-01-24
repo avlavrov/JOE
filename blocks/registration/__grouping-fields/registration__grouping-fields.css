@@ -1,0 +1,9 @@
+.registration__grouping-fields {
+ display: flex;
+}
+
+@media all and (max-width: 470px) {
+  .registration__grouping-fields {
+    display: block;
+   }
+}

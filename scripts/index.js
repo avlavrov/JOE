@@ -4,7 +4,8 @@ import { articleDatabase } from './articles_db.js';
 // popups
 const popupList = Array.from(document.querySelectorAll('.popup'));
 const popupUserLogin = document.querySelector('.popup-login');
-const popupRegister = document.querySelector('.popup-register');
+const formUserLogin = popupUserLogin.querySelector('.popup__form');
+
 // const popupPlace = document.querySelector('.popup-place');
 // new place popup
 // const placeTemplate = document.querySelector('#place-template').content;
@@ -12,14 +13,13 @@ const popupRegister = document.querySelector('.popup-register');
 // const newPlaceLink = popupPlace.querySelector('[name="place-foto-link"]');
 // const formPlace = popupPlace.querySelector('[name="new-place"]');
 // user login popup
-const formUserLogin = popupUserLogin.querySelector('.popup__form');
-const formRegister = popupRegister.querySelector('.popup__form');
+
 // const profileName = document.querySelector('.profile__name');
 // const profileJob = document.querySelector('.profile__job');
 // const newProfileName = popupUser.querySelector('[name="name"]');
 // const newProfileJob = popupUser.querySelector('[name="job"]');
 // buttons
-const linkLoginOpen = document.querySelector('.login-open');
+const loginButton = document.querySelector('.header__login-button');
 const linkRegisterOpen = document.querySelector('.popup__register-link');
 // const buttonNewPlace = document.querySelector('.profile__add-button');
 const allButtonsClose = Array.from(document.querySelectorAll('.popup-close'));
@@ -56,14 +56,13 @@ function openPopup(type) {
 
 function handleOpenUserLoginPopup(evt) {
   evt.preventDefault();
-  const formElement = popupUserLogin.querySelector('.popup__form');
-  const inputList = Array.from(formElement.querySelectorAll('.popup__input'));
+  const inputList = Array.from(formUserLogin.querySelectorAll('.popup__input'));
   // newProfileName.value = profileName.textContent;
   // newProfileJob.value = profileJob.textContent;
   buttonUserLogin.classList.add('popup__button_disabled');
-  inputList.forEach((inputElement) => {
-    hideInputError(formElement, inputElement)
-  });
+  // inputList.forEach((inputElement) => {
+  //   hideInputError(formElement, inputElement)
+  // });
   openPopup(popupUserLogin);
 }
 
@@ -74,9 +73,9 @@ function handleOpenRegisterPopup(evt) {
   // newProfileName.value = profileName.textContent;
   // newProfileJob.value = profileJob.textContent;
   buttonUserLogin.classList.add('popup__button_disabled');
-  inputList.forEach((inputElement) => {
-    hideInputError(formElement, inputElement)
-  });
+  // inputList.forEach((inputElement) => {
+  //   hideInputError(formElement, inputElement)
+  // });
   openPopup(popupRegister);
 }
 
@@ -149,8 +148,8 @@ function setCloseBottunListeners() {
 
 // main page code
 articleDatabase.forEach(addCard);
-linkLoginOpen.addEventListener('click', handleOpenUserLoginPopup);
-linkRegisterOpen.addEventListener('click', handleOpenRegisterPopup);
+loginButton.addEventListener('click', handleOpenUserLoginPopup);
+// linkRegisterOpen.addEventListener('click', handleOpenRegisterPopup);
 // buttonNewPlace.addEventListener('click', handleOpenPlacePopup);
 formUserLogin.addEventListener('submit', handleUserLogin);
 // formPlace.addEventListener('submit', handleAddNewPlace);

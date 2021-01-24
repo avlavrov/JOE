@@ -1,0 +1,10 @@
+.registration {
+  max-width: 500px;
+  margin: auto;
+}
+
+@media all and (max-width: 520px) {
+  .registration {
+margin: 0 10px;
+  }
+}

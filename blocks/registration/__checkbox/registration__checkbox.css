@@ -1,0 +1,30 @@
+.registration__checkbox {
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 3px;
+  transition-duration: 0.1s;
+  background-color: rgb(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.registration__checkbox:checked + span::before {
+  content: '\2713';
+  display: block;
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  position: absolute;
+  left: 2px;
+  top: 0;
+}
+
+.registration__checkbox:focus {
+  outline: 0;
+  box-shadow: 0 0 0 1px black;
+}
