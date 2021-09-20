@@ -1,0 +1,122 @@
+Types of articles
+<ul class="simple-list">
+                  <!----><li class="preselected">
+                  Special Topic Abstract
+                  </li><li>
+                  Original Research
+                  </li><li>
+                  Original Research in Medicine
+                  </li><li>
+                  Systematic Review
+                  </li><li>
+                  Methods
+                  </li><li>
+                  Protocols
+                  </li><li>
+                  Technology Report
+                  </li><li>
+                  Review
+                  </li><li>
+                  Reviews in Medicine
+                  </li><li>
+                  Mechanisms of Disease Reviews
+                  </li><li>
+                  Mini Review
+                  </li><li>
+                  Mini Reviews in Medicine
+                  </li><li>
+                  Conference Full Paper
+                  </li><li>
+                  Conference Brief Paper
+                  </li><li>
+                  Conference Comments Paper
+                  </li><li>
+                  Policy and Practice Reviews
+                  </li><li>
+                  Hypothesis and Theory
+                  </li><li>
+                  Perspective
+                  </li><li>
+                  Perspectives in Medicine
+                  </li><li>
+                  Clinical Trial
+                  </li><li>
+                  Clinical Study Protocol
+                  </li><li>
+                  CPC
+                  </li><li>
+                  Case Report
+                  </li><li>
+                  Community Case Study
+                  </li><li>
+                  Conceptual Analysis
+                  </li><li>
+                  Classification
+                  </li><li>
+                  Evaluation
+                  </li><li>
+                  Empirical Study
+                  </li><li>
+                  Curriculum, Instruction, and Pedagogy
+                  </li><li>
+                  Data Report
+                  </li><li>
+                  Code
+                  </li><li>
+                  Policy Brief
+                  </li><li>
+                  Brief Research Report
+                  </li><li>
+                  General Commentary
+                  </li><li>
+                  Opinion
+                  </li><li>
+                  Book Review
+                  </li><li>
+                  Erratum
+                  </li><li>
+                  Correction
+                  </li><li>
+                  Medical Book Review
+                  </li><li>
+                  Letter to the Editor
+                  </li><li>
+                  Images in Medicine
+                  </li><li>
+                  Core Concept
+                  </li><li>
+                  New Discovery
+                  </li><li>
+                  Specialty Grand Challenge
+                  </li><li>
+                  Test for questionnaire edit
+                  </li><li>
+                  Retraction
+                  </li><li>
+                  Registered Report
+                  </li><li>
+                  Medical Case Report
+                  </li><li>
+                  Research Snapshot
+                  </li><li>
+                  Addendum
+                  </li><li>
+                  Technology and Code
+                  </li><li>
+                  Study Protocol
+                  </li><li>
+                  Highlights
+                  </li><li>
+                  General Editorial
+                  </li><li>
+                  Hints and Kinks
+                  </li><li>
+                  Young Researcher Editorial
+                  </li><li>
+                  Frontiers Commentary
+                  </li><li>
+                  Focused Review
+                  </li><li>
+                  Field Grand Challenge
+                  </li>
+               </ul>

@@ -1,27 +1,12 @@
-import { Card } from './card.js';
-import { articleDatabase } from './articles_db.js';
+import { FormValidator } from './formValidator.js';
+import { registrationConfig } from './configs.js';
 
 const formRegistration = document.querySelector('.registration__form');
-// const popupPlace = document.querySelector('.popup-place');
-// new place popup
-// const placeTemplate = document.querySelector('#place-template').content;
-// const newPlaceName = popupPlace.querySelector('[name="place-name"]');
-// const newPlaceLink = popupPlace.querySelector('[name="place-foto-link"]');
-// const formPlace = popupPlace.querySelector('[name="new-place"]');
-// user login popup
-
-// const profileName = document.querySelector('.profile__name');
-// const profileJob = document.querySelector('.profile__job');
-// const newProfileName = popupUser.querySelector('[name="name"]');
-// const newProfileJob = popupUser.querySelector('[name="job"]');
 // buttons
 const loginButton = document.querySelector('.header__login-button');
 const linkRegisterOpen = document.querySelector('.popup__register-link');
-// const buttonNewPlace = document.querySelector('.profile__add-button');
 const allButtonsClose = Array.from(document.querySelectorAll('.popup-close'));
-const cards = document.querySelector('.cards');
 const buttonUserLogin = document.querySelector('.popup__button_user-login');
-// const buttonSavePlace = document.querySelector('.popup__button_place-save');
 // service functions
 function closePopupByEsc(evt) {
   if (evt.key === 'Escape') {

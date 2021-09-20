@@ -1,39 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./pages/article.css">
-  <link rel="icon" type="image" href="">
-  <title>Journal of Everything - Article</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./pages/article.css">
+	<link rel="icon" type="image" href="">
+	<title>JOE - Article</title>
 </head>
+
 <body class="main-page">
 	<header class="header overlay">
-			<h1 class="header__title">Journal of Everything<br>
-				<i>peer-reviewed</i></h1>
-	<nav class='menu'>
-		<a href='#' class='menu-link'>Choose topic</a>
-		<a href='#' class='menu-link'>Top New</a>
-		<a href='#' class='menu-link'>Enter account</a>
-	</nav>
-  </header>
-  <main class="content">
-	<article class="aticle">
-		<div>
-			<p class="article__type">Review</p>
-			<p class="article__acc-date">08 February 2020</p>
-		</div>
-		<h2 class="article__title">TIRR: a potential front runner in HDR race − hypotheses and perspectives</h2>
-		<p class="article__authors">A. A. Anuchina, A. V. Lavrov & S. A. Smirnikhina</p>
-		<p class="article__authors-aff">Research Center for Medical Genetics</p>
-		<p class="article__text">Main article text</p>
-		<p class="article__abstract">The majority of CRISPR-Cas9 methods for mutations correction are oriented on gene editing through homologous recombination that is normally restrained by non-homologous end joining (NHEJ). A recently identified protein TIRR can bind a 53BP1 protein, a key effector of NHEJ, and inhibit its recruitment to double-strand break loci. Several studies elucidated the molecular mechanisms of TIRR-53BP1 binding and established bidirectional role of TIRR in 53BP1 functions and stability. It was proved that overexpression of TIRR promotes the double-strand break repair through homologous recombination. All findings, which were described in the review, allow assuming TIRR as a suitable target for enhancing efficacy of genome editing through homology directed repair.</p>
-	</article>
+		<h1 class="header__title">Journal of Everything<br>
+			<i>peer-reviewed</i>
+		</h1>
+		<nav class='menu'>
+			<a href='./index.html' class='menu-link'>Home</a>
+		</nav>
+	</header>
+	<main class="content">
+		<section class="aticle">
+			<!-- Technical numbers -->
+			<section>
+				<p class="article__ID">Article ID: <span>articleID</span></p>
+				<p class="article__type">Review</p>
+				<p class="article__publish-date">Published: 08 February 2020</p>
+				<p class="article__acc-date">Accepted: 07 February 2020</p>
+				<p class="article__submit-date">Submitted: <span>01 January 2020</span> </p>
+				<p class="article__revisionID">Article revision ID: <span>articleRevisionID</span></p>
+			</section>
+			<!-- Title, authors, abstract -->
+			<section>
+				<h2 class="article__title">TIRR: a potential front runner in HDR race − hypotheses and perspectives</h2>
+				<p class="article__authors">A. A. Anuchina, A. V. Lavrov & S. A. Smirnikhina</p>
+				<p class="article__authors-aff">Research Center for Medical Genetics</p>
+				<p class="article__abstract">The majority of CRISPR-Cas9 methods for mutations correction are oriented on gene
+					editing through homologous recombination that is normally restrained by non-homologous end joining (NHEJ). A
+					recently identified protein TIRR can bind a 53BP1 protein, a key effector of NHEJ, and inhibit its recruitment
+					to double-strand break loci. Several studies elucidated the molecular mechanisms of TIRR-53BP1 binding and
+					established bidirectional role of TIRR in 53BP1 functions and stability. It was proved that overexpression of
+					TIRR promotes the double-strand break repair through homologous recombination. All findings, which were
+					described in the review, allow assuming TIRR as a suitable target for enhancing efficacy of genome editing
+					through homology directed repair.</p>
+			</section>
+			<!-- full text -->
+			<article class="article__content">
+				<div class="article__text">
+					<h2>Introduction</h2>
+					<p>
+						&nbsp;
+					</p>
+					<p>
+						Modern genome editing approaches can be directed to implementation or correction of mutation in nucleotide
+						sequence. In the last case, it is necessary to provide a specific repair of a DNA lesion after Cas9 action.
+						This mechanism is called homology directed repair (HDR) and based on matrix-dependent reconstruction of the
+						double-strand break through homologous recombination (HR)[1]. With the use of specific guide RNA and donor
+						molecule, it is theoretically possible to repair any interesting mutation. The major problem is low efficacy
+						of HDR in comparison to other repair mechanism – non-homologous end-joining (NHEJ), in particular, to
+						classical NHEJ or c-NHEJ [2][3]. HDR and c-NHEJ dominate in different cell-cycle phases. It is proved that
+						c-NHEJ is major repair mechanism in G1 and early G2 phases, while HDR - in late G2 and S phases, because
+						just
+						in these phases homological chromosome – the necessary matrix for HR – is available [4]. Consequently, DSB
+						repair favors more с-NHEJ, that HDR.
+					</p>
+					<p>
+						A number of methods are used for increase HR efficacy in repair of Cas9-induced break. Particularly, it is
+						cell-cycle synchronization[5], knockdown of NHEJ factors with siRNAs[6], overexpression of HDR factors or
+						their fusion with Cas9[7][8], using different types of nucleases and donor molecules(Byrne, Ortiz, Mali,
+						Aach,
+						&amp; Church, 2015; Zhang et al., 2017;Richardson, Ray, DeWitt, Curie, &amp; Corn, 2016)[12]. Nevertheless,
+						studies with the same methods often demonstrate controversial results. Moreover, many repair stages are not
+						fully studied, new factors are discovered eventually, and that affects and alters the existing repair
+						network
+						[13].
+					</p>
+					<p>
+						In 2017, a new uncharacterized protein, that involves c-NHEJ-repair pathway, was discovered [14]. TIRR
+						(Tudor-interacting repair regulator) participates in first stages of c-NHEJ, and interacts with its key
+						factor, p53-binding protein 1 (53BP1).&nbsp; During the c-NHEJ initiation, 53BP1 binds with DSB via histone
+						marks (H4K20me2) and (H2AK15ub)[15] The unique ability of TIRR is to mask the H4K20Me2 binding surface, and
+						“absorb” 53BP1 molecules. It was shown that, on the one hand, TIRR depletion negatively impact
+						53BP1-stability
+						and protein levels and, on the other hand, TIRR overexpression suppresses 53BP1-chromatin binding.
+						[14][16]These data allow to speak about dual role of TIRR in NHEJ and HR processes[17].<a
+							href="file:///C:/Users/Aleksandr.Lavrov/Downloads/TIRR%20protein%20as%20the%20new%20potential%20target%20for%20HDR%20enhancing-Sm_An.docx#_msocom_1">[S1]</a>&nbsp;
+						-.
+					</p>
+					<p>
+						In the present review general scheme of TIRR involvement in repair pathways is shown, molecular features of
+						protein and their impact on 53BP1 are observed, and advantages of using TIRR as new target for genome
+						editing
+						efficacy improving are discussed.
+					</p>
+					<p>
+						&nbsp;
+					</p>
+					<h2>Counteraction of key DSB repair mechanisms in the break locus</h2>
+					<p>
+						&nbsp;
+					</p>
+					<p>
+						The choice between c-NHEJ and HDR occurs via complicated network of interactions oriented on promotion of
+						53BP1 (c-NHEJ key factor) or BRCA1 (HDR key factor) activity. These two proteins are in permanent
+						counterstrategy to each other in the locus of DSB, and both of them mediate many additional factors to stay
+						on
+						the break point.
+					</p>
+					<p>
+						NHEJ initiation participants:<a
+							href="file:///C:/Users/Aleksandr.Lavrov/Downloads/TIRR%20protein%20as%20the%20new%20potential%20target%20for%20HDR%20enhancing-Sm_An.docx#_msocom_2">[S2]</a>&nbsp;
+					</p>
+					<p>
+						·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 53BP1 – is the homooligomer, which main function is to protect the
+						break
+						ends from the initial stage of HR - end resection[18]. It specifically binds with chromatin to dimethylated
+						Lys20 of histone 4 (H4K20me2) with Tudor domain and to RNF168-ubiquitylated H2AK15 with UDR
+						(ubiquitination-dependent recruitment) motif[15], [19].
+					</p>
+					<p>
+						·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The main effector proteins for 53BP1 are RIF1 (RAP1-interacting factor
+						1) and PTIP (PAX transactivation activation domain-interacting protein)[20], [21]. The bond between them and
+						53BP1 becomes available after phosphorylation with ATM (ataxia-telangiectasia mutated)-kinase[22].&nbsp;
+					</p>
+					<p>
+						·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RIF1 mediate recruitment large complex, discovered in 2018 and called
+						Shieldin[23]. It consists of 4 parts: SHLD1, SHLD2, SHLD3 proteins and MAD2L2 protein, which is considered
+						to
+						be the crucial participant of the Shieldin complex and key regulator of its stability[24], [25].
+					</p>
+					<p>
+						HDR initiation participants:
+					</p>
+					<p>
+						·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BRCA1 – is a protein that participates in many processes: DNA
+						transcription, cell signaling, chromatin organization, maintaining genomic stability[26]. The protein
+						contains
+						several domains participated in homologous recombination by activating DNA-end resection – the first step of
+						HR[27].
+					</p>
+					<p>
+						·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MRN – is a complex that consists of Mre11, Rad50 and Nbs1 proteins in
+						eukaryotes[28]. Together with BRCA1 it promotes the initial HR stage - generation of 5′ resected ends, where
+						the main role belongs to MRE11 endonuclease, which nicks the DNA upstream from the break[29]. The actual
+						3′→5′
+						resection towards the break is also provided by Mre11, and following deeper resection is performed by two
+						nucleases: Exo1 and Dna2[30][31].&nbsp; Additionally, a protein CtIP works in cooperation with the MRN
+						complex
+						and is responsible for enhancing end-resection[31].
+					</p>
+					<p>
+						·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SCAI – is a protein that promotes 53BP1-RIF1 dissociation and which
+						knockdown inhibits the recruitment of main HR-factors (BRCA1, CtIP, etc.) to damage sites[31].
+						SCAI-RIF1-relations are considered to be the part of the BRCA1 activity.
+					</p>
+					<p>
+						·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; POH1 – is a deubiquitinating enzyme (DUB) that promotes a clearance of
+						53BP1 from the damage site[32]. It is a proteasome component with ability to counteract RNF8/RNF168 (E3
+						ubiquitin ligases) dependent ubiquitin activity, which promotes recruitment of 53BP1 and RAP80 (suppresses
+						HR)
+						&nbsp;proteins to damage site[33]. The &nbsp;BRCA1-mediated activity of POH1 performs release the break site
+						from RAP80,ubiquitin chains and, consequently, removal the 53BP1[34].
+					</p>
+					<p>
+						In general, 53BP1-complex act as a permanent inhibitor of end-resection via MRN, CtIP and BRCA1, and
+						provides
+						the protection of downstream NHEJ effectors. For HR initiation BRCA1-system should impair existing barrier
+						stage by stage through the bunch of mechanisms. To sum up, BRCA- and 53BP1-mechanisms are complicated
+						systems,
+						which have several antagonized points and many factors, involved in their stability, thus, many targets to
+						manipulate with efficacy one or another pathway.
+					</p>
+					<h2>&nbsp;</h2>
+					<h2>The role of chromatin condition in repair pathway choice</h2>
+					<p>
+						&nbsp;
+					</p>
+					<p>
+						Over last decade a picture of DSB histone marks was enriched by new findings. It was showed that replication
+						status of the DNA can ensure the correct repair pathway via epigenetic marks – different histone
+						modifications
+						can serve as a dock for recruitment different factors[35]. There are evidences about participation several
+						chromatin marks in repair events. Indeed, H3K9me3 is considered to be the initial functionally relevant
+						event
+						in HR-directed gene modification via opening chromatin and recruiting the appropriate enzymes[36]. H3K36me2
+						mediates c-NHEJ pathway, and H3K36me3 is necessary for HR[37], [38]. H3K4 methylation may be associated with
+						c-NHEJ or HR depending on different type of modifying enzyme.[39]
+					</p>
+					<p>
+						Interesting results were received in study of Simonetta et al. Two-fold dilution of H4K20me2 mark <a
+							href="file:///C:/Users/Aleksandr.Lavrov/Downloads/TIRR%20protein%20as%20the%20new%20potential%20target%20for%20HDR%20enhancing-Sm_An.docx#_msocom_3">[S3]</a>&nbsp;was
+						observed in replicated DNA in comparison to non-replicated[40]. Taking into account that dimethylated <a
+							href="file:///C:/Users/Aleksandr.Lavrov/Downloads/TIRR%20protein%20as%20the%20new%20potential%20target%20for%20HDR%20enhancing-Sm_An.docx#_msocom_4">[S4]</a>&nbsp;<a
+							href="file:///C:/Users/Aleksandr.Lavrov/Downloads/TIRR%20protein%20as%20the%20new%20potential%20target%20for%20HDR%20enhancing-Sm_An.docx#_msocom_5">[АА5]</a>&nbsp;lysine
+						20 of histone 4 recruits 53BP1-RIF1 complex and promotes c-NHEJ, decrease in number of corresponding marks
+						provide the release of chromatin from non-homologous factors and mediate access of BRCA1. At the same time,
+						recruitment of 53BP1 to chromatin should be provided only with prepared H2AK15ub mark in combination with
+						H4K20me2[19].
+					</p>
+					<p>
+						Described evidences considered that repair pathway choice in some extent depends on replication status of
+						chromatin. Nevertheless, despite some histone marks is showed to be involved in repair pathways, correct
+						work
+						of all system can be ensured just with complex action of all epigenetic modifications.
+					</p>
 
-  </main>
-  <footer class="footer">
-    <button class='submitt-button'>Submitt an article</button>
-  </footer>
+					<p>
+						&nbsp;
+					</p>
+					<h2>The first histone-masking protein</h2>
+					<p>
+						&nbsp;
+					</p>
+					<p>
+						Structure and homology
+					</p>
+					<p>
+						Tudor-interacting repair regulator (Syndesmos or Nudt16L1) was identified and characterized in 2017 by Drane
+						et al. and Zhanget al It has an ability to interact with specific Tudor domain of 53BP1-protein and regulate
+						its activity.[14], [16]
+					</p>
+					<p>
+						TIRR has a homology to the members of nudix hydrolase family, widely spread in bacteria, viruses,
+						eukaryotes,
+						and archaea, and has 46% sequence homology with its member Nudt16[41]. Nudix proteins have a specific Nudix
+						motif <a
+							href="file:///C:/Users/Aleksandr.Lavrov/Downloads/TIRR%20protein%20as%20the%20new%20potential%20target%20for%20HDR%20enhancing-Sm_An.docx#_msocom_6">[S6]</a>&nbsp;or
+						box consists of 23 amino acids, and perform different functions in regulation, protection and signaling[42].
+						They are characterized by ability to remove the organic pyrophosphates from the cellular environment.
+					</p>
+					<p>
+						Nucleoside Diphosphate-Linked Moiety X Motif 16 – is a pyrophosphatase that hydrolyses nucleic acid
+						substrates
+						and catalyzes removal the cap structure from mRNAs[43]. Nudt16 was reported as evolutionary ancestor of
+						TIRR,
+						which originated from hydrolase enzyme due to DNA mutations[44].&nbsp; Several studies compared TIRR and
+						Nudt16 and revealed their similarities and differences. First of all, TIRR has a structural resemblance with
+						Nudt16 and save the canonical Nudix fold, but at the same time lacks an intact NUDIX domain, that is why it
+						is
+						not able to perform hydrolase’s functions(Picture)[45]. In turn, Nudt16 is not able to directly interact
+						with
+						53BP1. One the one hand<a
+							href="file:///C:/Users/Aleksandr.Lavrov/Downloads/TIRR%20protein%20as%20the%20new%20potential%20target%20for%20HDR%20enhancing-Sm_An.docx#_msocom_7">[S7]</a>&nbsp;,
+						it was showed that Nudix domain is not important in the binding between 53BP1 and TIRR[45]. One the other
+						hand, structure analysis revealed that key residues needed for Tudor domain-interaction are conserved in
+						Nudt16 (including Lys10, Pro105, and Arg107), except one, histidine residue H106(Picture). The residue
+						presents only in L8-loop of TIRR. This loop is shorter in Nudt16, what is supposed to impact Tudor-binding
+						features. Disrupted binding with Tudor is also determined by Nudt16-specific residues: R5, L7, and V100. It
+						was discovered that 53BP1-TIRR binding surface is centered on Arg107 residue. The other important residues
+						from the α1-β1 loop, N-terminus loop and β4-β5 loop of TIRR form a specific hydrophobic layer protecting the
+						hydrophobic dimethyl-lysine binding pocket of Tudor, through which TIRR and H4K20Me2 interacts with
+						TIRR[46].
+					</p>
+					<p>
+						All these interactions make, a coreand binding surface for stable and effective interaction between 53BP1
+						and
+						TIRR proteins.
+					</p>
+					<p>
+						&nbsp;
+					</p>
+					<p>
+						Role in DNA repair
+					</p>
+					<p>
+						Performed studies learned behavior the c-NHEJ and HR factors in TIRR-overexpression, TIRR depletion and next
+						restoring of levels. As markers of restored HR in BRCA1-deficient cells PARP inhibitors (PARPi) were
+						used.&nbsp; These substances cause multiple double-strand breaks and, if they cannot be correctly repaired,
+						it
+						leads to death of the cell[47]. In opposite, restoring the resistance to PARPi points on the recovery of HR
+						mechanism[48].
+					</p>
+					<p>
+						TIRR expression was shown to abolish a 53BP1 foci formation. However, there are controversial results about
+						overexpression consequences: Wang et al showed that ectopic overexpression in BRCA1-deficient cells did not
+						affect the sensitivity to PARPi, though normal expression regained HR and decrease the sensitivity to PARP
+						inhibitor treatment. And Drane et al demonstrate that TIRR over-expression in cells with hypomorphic
+						Brca1-alleles <a
+							href="file:///C:/Users/Aleksandr.Lavrov/Downloads/TIRR%20protein%20as%20the%20new%20potential%20target%20for%20HDR%20enhancing-Sm_An.docx#_msocom_8">[S8]</a>&nbsp;<a
+							href="file:///C:/Users/Aleksandr.Lavrov/Downloads/TIRR%20protein%20as%20the%20new%20potential%20target%20for%20HDR%20enhancing-Sm_An.docx#_msocom_9">[U9]</a>&nbsp;allowed
+						resistance to the PARP inhibitor olaparib, what can be related to loss of 53BP1 function.Additionally, it
+						was
+						shown that ATM-phosphorylation mediates dissociation of TIRR from 53BP1 that correlates to stage of
+						RIF1-binding[14].
+					</p>
+					<p>
+						The bidirectional nature of Tudor-interacting repair regulator related to the same effects when TIRR is
+						depleted. Drane et al showed that absence of TIRR increased the binding 53BP1 with different partner
+						molecules, making it more active compared to cells with normal TIRR expression. Also, TIRR depletion
+						increases
+						the 53BP1 foci formation. Wild-type TIRR can restore the DSB-resistant phenotype of the cell, but not the
+						mutant protein, that is not able to bind 53BP1. Other work also demonstrate reduce the numbers of HR-foci in
+						TIRR knockout cells[15].
+					</p>
+					<p>
+						That study was supplemented with Zhang et al results, who showed that loss of TIRR correlates with reduced
+						53BP1 expression and restores the resistance to PARP inhibition in BRCA1-deficient cells. The expression of
+						gRNA-resistant wild-type TIRR restored 53BP1 expression and decrease PARPi sensitivity in TIRR-depleted
+						cells.
+					</p>
+					<p>
+						To explain the dual results, Dranéet al proposed a theory about constitutive level of TIRR, when depletion
+						or
+						increase in levels negatively affects c-NHEJ. Despite the several opposite results, all researchers suggest
+						the inhibitory effect of TIRR on 53BP1 recruitment to damaged chromatin.
+					</p>
+					<h2>&nbsp;</h2>
+					<p>
+						&nbsp;
+					</p>
+					<h2>&nbsp;</h2>
+					<p>
+						&nbsp;
+					</p>
+					<h2>TIRR for genome editing: perspectives</h2>
+					<p>
+						&nbsp;
+					</p>
+					<p>
+						During the last years different approaches for improving HR-mediated genome editing were performed.
+						Inhibition
+						of c-NHEJ for increasing the HR extent is one of the widespread methods. Different repair factors, from the
+						downstream proteins to the key regulators of DSB repair pathway choice were used in a number of appropriate
+						experiments.
+					</p>
+					<p>
+						The last stage of c-NHEJ is ligation of ends via Ligase IV enzyme in cooperation with XRCC4 and XLF
+						proteins.
+						The Ligase IV inhibition is frequent method for HR enhancing. One of the most usable small molecule for that
+						approach is SCR7[49][50]–[53].It acts in a concentration-dependent manner and blocks the binding of Ligase
+						IV
+						to the break ends and, thus, inhibit the whole c-NHEJ pathway. Other methods for Ligase IV suppression
+						include
+						small RNA molecules action through RNA-interference and proteasomal degradation of the protein[6].
+					</p>
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Another strategy is
+						using
+						different inhibitors of Ku and DNA-PKs, those are crucial for next activation of nucleases, polymerases and
+						ligases. DNA-PKs activity can be suppressed through pharmacological inhibitors (KU-0060648 or ScFv18-2),
+						while
+						Ku can be inhibit through knocking down or using a specific compounds[51], [54].
+					</p>
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Finally, the 53BP1 activity can be also suppressed.
+						An
+						engineered ubiquitin variant, i53 was discovered after screening of corresponding library. Interesting, that
+						it acts similar to TIRR, through binding with Tudor domain and blocking the accumulation in DSB sites[55].
+					</p>
+					<p>
+						Nowadays we have many methods for HR enhancing and many factors that is why the problem is not the
+						development
+						an approach, but the choice of the correct factor for that. Theoretically, a suitable way of genome editing
+						improving should combine the c-NHEJ inhibition and HR enhancing ways. That can be reached through focusing
+						on
+						the repair pathway choice. NUDT16L1 protein combines several features that makes it a good target for genome
+						editing experiments.
+					</p>
+					<p>
+						First, TIRR is called as “bona-fide” inhibitor of 53BP1, a natural protein that promotes strong suppression
+						of
+						53BP1 without insertion into the cell alien molecules. Second, it is the unique bidirectional features of
+						TIRR. These features was explained through the one hypothesis after finding that both 53BP1 and TIRR undergo
+						conformational alteration during binding[56]. The authors supposed that these alterations could lead to
+						inaccessibility the ubiquitination-dependent recruitment (UDR) motif for degradation enzymes. However, in
+						the
+						case of TIRR depletion the motif is in other, available conformation, what results in strong decreasing of
+						53BP1 protein levels.
+					</p>
+					<p>
+						Thirdly, using molecules and agents with unknown interactions with other participants of repair pathway lead
+						to possible mistakes in that work. Last studies about TIRR and other repair proteins allow us to construct a
+						scheme of factor interactions in the break loci (pic.)
+					</p>
+					<p>
+						During DSB formation, 53BP1 undergo several modifications. First, it is a dissociation from TIRR that is
+						mediated by RIF1. Botuyan et al assumed that this step could be interacted with non-coding RNA molecules. It
+						was recently shown that these molecules are present on DSB focus after break induction. It was proposed,
+						that
+						ncRNAs could theoretically interact with both TIRR and RIF1 as RNA-binding proteins[44]. RIF1 can binds with
+						RNA and transport it to TIRR-53BP1 complex, thus modulating its dissociation through translocation the ncRNA
+						on TIRR. At the same time, 53BP1 is phosphorylated by ATM-kinase for being able to directly bond with RIF1
+						and
+						go to the break locus[14]. After binding with chromatin, 53BP1-RIF1 recruits the Shieldin complex with
+						MAD2L2
+						and strengthen the stability of c-NHEJ-factors. After that, non-homologous end-joining process prolongs to
+						downstream factors.
+					</p>
+					<p>
+						In the case of TIRR depletion, we will observer a hyperactive form of 53BP1, as was described[56]. That form
+						have the increasing efficacy of the binding with partners, but also less stability, that will be results in
+						many unstable 53BP1-focuses, that can bind to each H4K20Me2 histone mark, in the DSB or not in the DSB loci,
+						leading to lack of the 53BP1 at the DSB and preventing RIF-1 and Shieldin recruitment. As Shieldin complex
+						is
+						responsible for stability of c-NHEJ focus, longer staying other non-homologous factors in DSB without
+						Shielding should firstly lead to<a
+							href="file:///C:/Users/Aleksandr.Lavrov/Downloads/TIRR%20protein%20as%20the%20new%20potential%20target%20for%20HDR%20enhancing-Sm_An.docx#_msocom_10">[S10]</a>&nbsp;
+						dissociation of RIF through phosphorylation of SCAI-binding sites and consequent displacement of RIF1 by
+						SCAI,
+						and secondly, to the removing the 53BP1 through POH1-activity(pic).
+					</p>
+					<p>
+						TIRR overexpression can lead also to the lack of the 53BP1 in DSB loci, but for the reason of excessive
+						amount
+						of TIRR, molecules that can stronger compete with RIF1. Nevertheless, the consequences should lead to the
+						similar c-NHEJ inhibition..
+					</p>
+					<p>
+						&nbsp;
+					</p>
+					<p>
+						Conclusion
+					</p>
+					<p>
+						Thus, a theoretical scheme of TIRR interactions, based on variety of experimental studies, confirms the
+						crucial role of TIRR protein as a potential natural swithcer <a
+							href="file:///C:/Users/Aleksandr.Lavrov/Downloads/TIRR%20protein%20as%20the%20new%20potential%20target%20for%20HDR%20enhancing-Sm_An.docx#_msocom_11">[S11]</a>&nbsp;between
+						c-NHEJ and HR pathways. It action directly linked to only 53BP1 and RIF1 proteins, that excludes the
+						multiple
+						pathways impairment during manipulations with gene-editing efficacy enhancing. Obviously, TIRR can be used
+						in
+						experiments with genome editing to increase effective HR, but initially it is necessary to perform
+						additional
+						research the fundamental aspects of its functioning.
+					</p>
+					<p>
+						&nbsp;
+					</p>
+					<p>
+						&nbsp;
+					</p>
+					<p>
+						References
+					</p>
+					<p>
+						[1]&nbsp;&nbsp;&nbsp;&nbsp; M. Liu и др., «Methodologies for Improving HDR Efficiency.», Front. Genet., т.
+						9,
+						с. 691, 2018.
+					</p>
+					<p>
+						[2]&nbsp;&nbsp;&nbsp;&nbsp; M. Wang и др., «PARP-1 and Ku compete for repair of DNA double strand breaks by
+						distinct NHEJ pathways», Nucleic Acids Res., т. 34, вып. 21, сс. 6170–6182, дек. 2006.
+					</p>
+					<p>
+						[3]&nbsp;&nbsp;&nbsp;&nbsp; K. S. Pawelczak, N. S. Gavande, P. S. VanderVere-Carozza, и J. J. Turchi,
+						«Modulating DNA Repair Pathways to Improve Precision Genome Engineering», ACS Chem. Biol., т. 13, вып. 2,
+						сс.
+						389–396, фев. 2018.
+					</p>
+					<p>
+						[4]&nbsp;&nbsp;&nbsp;&nbsp; N. R. Pannunzio, G. Watanabe, и M. R. Lieber, «Nonhomologous DNA end-joining for
+						repair of DNA double-strand breaks», J. Biol. Chem., т. 293, вып. 27, сс. 10512–10523, июл. 2018.
+					</p>
+					<p>
+						[5]&nbsp;&nbsp;&nbsp;&nbsp; T. Gutschner, M. Haemmerle, G. Genovese, G. F. Draetta, и L. Chin,
+						«Post-translational Regulation of Cas9 during G1 Enhances Homology-Directed Repair», Cell Rep., т. 14, вып.
+						6,
+						сс. 1555–1566, фев. 2016.
+					</p>
+					<p>
+						[6]&nbsp;&nbsp;&nbsp;&nbsp; V. T. Chu и др., «Increasing the efficiency of homology-directed repair for
+						CRISPR-Cas9-induced precise gene editing in mammalian cells», Nat. Biotechnol., т. 33, вып. 5, сс. 543–548,
+						май 2015.
+					</p>
+					<p>
+						[7]&nbsp;&nbsp;&nbsp;&nbsp; J. Song, D. Yang, J. Xu, T. Zhu, Y. E. Chen, и J. Zhang, «RS-1 enhances
+						CRISPR/Cas9- and TALEN-mediated knock-in efficiency», Nat. Commun., т. 7, вып. 1, с. 10548, дек. 2016.
+					</p>
+					<p>
+						[8]&nbsp;&nbsp;&nbsp;&nbsp; M. Charpentier и др., «CtIP fusion to Cas9 enhances transgene integration by
+						homology-dependent repair», Nat. Commun., т. 9, вып. 1, с. 1133, дек. 2018.
+					</p>
+					<p>
+						[9]&nbsp;&nbsp;&nbsp;&nbsp; J.-P. Zhang и др., «Efficient precise knockin with a double cut HDR donor after
+						CRISPR/Cas9-mediated double-stranded DNA cleavage», Genome Biol., т. 18, вып. 1, с. 35, дек. 2017.
+					</p>
+					<p>
+						[10]&nbsp;&nbsp; S. M. Byrne, L. Ortiz, P. Mali, J. Aach, и G. M. Church, «Multi-kilobase homozygous
+						targeted
+						gene replacement in human induced pluripotent stem cells», Nucleic Acids Res., т. 43, вып. 3, сс. e21–e21,
+						фев. 2015.
+					</p>
+					<p>
+						[11]&nbsp;&nbsp; C. D. Richardson, G. J. Ray, M. A. DeWitt, G. L. Curie, и J. E. Corn, «Enhancing
+						homology-directed genome editing by catalytically active and inactive CRISPR-Cas9 using asymmetric donor
+						DNA»,
+						Nat. Biotechnol., т. 34, вып. 3, сс. 339–344, мар. 2016.
+					</p>
+					<p>
+						[12]&nbsp;&nbsp; D. Ma и др., «Engineer chimeric Cas9 to expand PAM recognition based on evolutionary
+						information», Nat. Commun., т. 10, вып. 1, с. 560, дек. 2019.
+					</p>
+					<p>
+						[13]&nbsp;&nbsp; S. A. Smirnikhina, A. A. Anuchina, и A. V. Lavrov, «Ways of improving precise knock-in by
+						genome-editing technologies», Hum. Genet., т. 138, вып. 1, сс. 1–19, янв. 2019.
+					</p>
+					<p>
+						[14]&nbsp;&nbsp; P. Drané и др., «TIRR regulates 53BP1 by masking its histone methyl-lysine binding
+						function»,
+						Nature, т. 543, вып. 7644, сс. 211–216, фев. 2017.
+					</p>
+					<p>
+						[15]&nbsp;&nbsp; M. V. Botuyan и др., «Structural Basis for the Methylation State-Specific Recognition of
+						Histone H4-K20 by 53BP1 and Crb2 in DNA Repair», Cell, т. 127, вып. 7, сс. 1361–1373, дек. 2006.
+					</p>
+					<p>
+						[16]&nbsp;&nbsp; A. Zhang, B. Peng, P. Huang, J. Chen, и Z. Gong, «The p53-binding protein
+						1-Tudor-interacting
+						repair regulator complex participates in the DNA damage response», J. Biol. Chem., т. 292, вып. 16, сс.
+						6461–6467, апр. 2017.
+					</p>
+					<p>
+						[17]&nbsp;&nbsp; P. Drané и D. Chowdhury, «TIRR and 53BP1- partners in arms.», Cell Cycle, т. 16, вып. 13,
+						сс.
+						1235–1236, июл. 2017.
+					</p>
+					<p>
+						[18]&nbsp;&nbsp; S. Panier и S. J. Boulton, «Double-strand break repair: 53BP1 comes into focus», Nat. Rev.
+						Mol. Cell Biol., т. 15, вып. 1, сс. 7–18, янв. 2014.
+					</p>
+					<p>
+						[19]&nbsp;&nbsp; A. Fradet-Turcotte и др., «53BP1 is a reader of the DNA-damage-induced H2A Lys 15 ubiquitin
+						mark.», Nature, т. 499, вып. 7456, сс. 50–4, июл. 2013.
+					</p>
+					<p>
+						[20]&nbsp;&nbsp; E. Callen и др., «The DNA Damage- and Transcription-Associated Protein Paxip1 Controls
+						Thymocyte Development and Emigration», Immunity, т. 37, вып. 6, сс. 971–985, дек. 2012.
+					</p>
+					<p>
+						[21]&nbsp;&nbsp; J. R. Chapman и др., «RIF1 Is Essential for 53BP1-Dependent Nonhomologous End Joining and
+						Suppression of DNA Double-Strand Break Resection», Mol. Cell, т. 49, вып. 5, сс. 858–871, мар. 2013.
+					</p>
+					<p>
+						[22]&nbsp;&nbsp; E. Callen и др., «53BP1 mediates productive and mutagenic DNA repair through distinct
+						phosphoprotein interactions.», Cell, т. 153, вып. 6, сс. 1266–80, июн. 2013.
+					</p>
+					<p>
+						[23]&nbsp;&nbsp; S. M. Noordermeer и др., «The shieldin complex mediates 53BP1-dependent DNA repair»,
+						Nature,
+						т. 560, вып. 7716, сс. 117–121, авг. 2018.
+					</p>
+					<p>
+						[24]&nbsp;&nbsp; H. Ghezraoui и др., «53BP1 cooperation with the REV7–shieldin complex underpins DNA
+						structure-specific NHEJ», Nature, т. 560, вып. 7716, сс. 122–127, авг. 2018.
+					</p>
+					<p>
+						[25]&nbsp;&nbsp; S. Findlay и др., «SHLD2/FAM35A co-operates with REV7 to coordinate DNA double-strand break
+						repair pathway choice.», EMBO J., т. 37, вып. 18, сен. 2018.
+					</p>
+					<p>
+						[26]&nbsp;&nbsp; M. Isono и др., «BRCA1 Directs the Repair Pathway to Homologous Recombination by Promoting
+						53BP1 Dephosphorylation.», Cell Rep., т. 18, вып. 2, сс. 520–532, янв. 2017.
+					</p>
+					<p>
+						[27]&nbsp;&nbsp; B. P. Schlegel, F. M. Jodelka, и R. Nunez, «BRCA1 Promotes Induction of ssDNA by Ionizing
+						Radiation», Cancer Res., т. 66, вып. 10, сс. 5181–5189, май 2006.
+					</p>
+					<p>
+						[28]&nbsp;&nbsp; A. W. Kijas и др., «ATM-dependent phosphorylation of MRE11 controls extent of resection
+						during homology directed repair by signalling through Exonuclease 1.», Nucleic Acids Res., т. 43, вып. 17,
+						сс.
+						8352–67, сен. 2015.
+					</p>
+					<p>
+						[29]&nbsp;&nbsp; A. Shibata и др., «DNA double-strand break repair pathway choice is directed by distinct
+						MRE11 nuclease activities.», Mol. Cell, т. 53, вып. 1, сс. 7–18, янв. 2014.
+					</p>
+					<p>
+						[30]&nbsp;&nbsp; V. Garcia, S. E. L. Phelps, S. Gray, и M. J. Neale, «Bidirectional resection of DNA
+						double-strand breaks by Mre11 and Exo1.», Nature, т. 479, вып. 7372, сс. 241–4, окт. 2011.
+					</p>
+					<p>
+						[31]&nbsp;&nbsp; A. V Nimonkar и др., «BLM-DNA2-RPA-MRN and EXO1-BLM-RPA-MRN constitute two DNA end
+						resection
+						machineries for human DNA break repair.», Genes Dev., т. 25, вып. 4, сс. 350–62, фев. 2011.
+					</p>
+					<p>
+						[32]&nbsp;&nbsp; L. R. Butler и др., «The proteasomal de-ubiquitinating enzyme POH1 promotes the
+						double-strand
+						DNA break response.», EMBO J., т. 31, вып. 19, сс. 3918–34, окт. 2012.
+					</p>
+					<p>
+						[33]&nbsp;&nbsp; S. Nakada, «Opposing roles of RNF8/RNF168 and deubiquitinating enzymes in
+						ubiquitination-dependent DNA double-strand break response signaling and DNA-repair pathway choice.», J.
+						Radiat. Res., т. 57 Suppl 1, вып. Suppl 1, сс. i33–i40, авг. 2016.
+					</p>
+					<p>
+						[34]&nbsp;&nbsp; A. Kakarougkas, A. Ismail, Y. Katsuki, R. Freire, A. Shibata, и P. A. Jeggo, «Co-operation
+						of
+						BRCA1 and POH1 relieves the barriers posed by 53BP1 and RAP80 to resection.», Nucleic Acids Res., т. 41,
+						вып.
+						22, сс. 10298–311, дек. 2013.
+					</p>
+					<p>
+						[35]&nbsp;&nbsp; J. Dabin, A. Fortuny, и S. E. Polo, «Epigenome Maintenance in Response to DNA Damage.»,
+						Mol.
+						Cell, т. 62, вып. 5, сс. 712–27, 2016.
+					</p>
+					<p>
+						[36]&nbsp;&nbsp; G. Russo и др., «DNA damage and Repair Modify DNA methylation and Chromatin Domain of the
+						Targeted Locus: Mechanism of allele methylation polymorphism», Sci. Rep., т. 6, вып. 1, с. 33222, дек. 2016.
+					</p>
+					<p>
+						[37]&nbsp;&nbsp; S. Fnu и др., «Methylation of histone H3 lysine 36 enhances DNA repair by nonhomologous
+						end-joining.», Proc. Natl. Acad. Sci. U. S. A., т. 108, вып. 2, сс. 540–5, янв. 2011.
+					</p>
+					<p>
+						[38]&nbsp;&nbsp; F. Aymard и др., «Transcriptionally active chromatin recruits homologous recombination at
+						DNA
+						double-strand breaks.», Nat. Struct. Mol. Biol., т. 21, вып. 4, сс. 366–74, апр. 2014.
+					</p>
+					<p>
+						[39]&nbsp;&nbsp; S. Wei и др., «Histone methylation in DNA repair and clinical practice: new findings during
+						the past 5-years.», J. Cancer, т. 9, вып. 12, сс. 2072–2081, 2018.
+					</p>
+					<p>
+						[40]&nbsp;&nbsp; M. Simonetta и др., «H4K20me2 distinguishes pre-replicative from post-replicative chromatin
+						to appropriately direct DNA repair pathway choice by 53BP1-RIF1-MAD2L2», Cell Cycle, т. 17, вып. 1, с. 124,
+						2018.
+					</p>
+					<p>
+						[41]&nbsp;&nbsp; J. R. Srouji, A. Xu, A. Park, J. F. Kirsch, и S. E. Brenner, «The evolution of function
+						within the Nudix homology clan.», Proteins, т. 85, вып. 5, сс. 775–811, 2017.
+					</p>
+					<p>
+						[42]&nbsp;&nbsp; A. G. McLennan, «The Nudix hydrolase superfamily», Cell. Mol. Life Sci., т. 63, вып. 2, сс.
+						123–143, янв. 2006.
+					</p>
+					<p>
+						[43]&nbsp;&nbsp; T. Iyama, N. Abolhassani, D. Tsuchimoto, M. Nonaka, и Y. Nakabeppu, «NUDT16 is a
+						(deoxy)inosine diphosphatase, and its deficiency induces accumulation of single-strand breaks in nuclear DNA
+						and growth arrest.», Nucleic Acids Res., т. 38, вып. 14, сс. 4834–43, авг. 2010.
+					</p>
+					<p>
+						[44]&nbsp;&nbsp; M. J. Taylor и B. A. Peculis, «Evolutionary conservation supports ancient origin for
+						Nudt16,
+						a nuclear-localized, RNA-binding, RNA-decapping enzyme», Nucleic Acids Res., т. 36, вып. 18, сс. 6021–6034,
+						окт. 2008.
+					</p>
+					<p>
+						[45]&nbsp;&nbsp; Y. Dai, A. Zhang, S. Shan, Z. Gong, и Z. Zhou, «Structural basis for recognition of 53BP1
+						tandem Tudor domain by TIRR.», Nat. Commun., т. 9, вып. 1, с. 2123, 2018.
+					</p>
+					<p>
+						[46]&nbsp;&nbsp; J. Wang и др., «Molecular basis for the inhibition of the methyl-lysine binding function of
+						53BP1 by TIRR.», Nat. Commun., т. 9, вып. 1, с. 2689, 2018.
+					</p>
+					<p>
+						[47]&nbsp;&nbsp; S. Tangutoori, P. Baldwin, и S. Sridhar, «PARP inhibitors: A new era of targeted therapy»,
+						Maturitas, т. 81, вып. 1, сс. 5–9, май 2015.
+					</p>
+					<p>
+						[48]&nbsp;&nbsp; M. Javle и N. J. Curtin, «The role of PARP in DNA repair and its therapeutic
+						exploitation.»,
+						Br. J. Cancer, т. 105, вып. 8, сс. 1114–22, окт. 2011.
+					</p>
+					<p>
+						[49]&nbsp;&nbsp; Z. Hu и др., «Ligase IV inhibitor SCR7 enhances gene editing directed by CRISPR–Cas9 and
+						ssODN in human cancer cells», Cell Biosci., т. 8, вып. 1, с. 12, дек. 2018.
+					</p>
+					<p>
+						[50]&nbsp;&nbsp; J. Pinder, J. Salsman, и G. Dellaire, «Nuclear domain ‘knock-in’ screen for the evaluation
+						and identification of small molecule enhancers of CRISPR-based genome editing», Nucleic Acids Res., т. 43,
+						вып. 19, сс. 9379–9392, окт. 2015.
+					</p>
+					<p>
+						[51]&nbsp;&nbsp; F. Robert, M. Barbeau, S. Éthier, J. Dostie, и J. Pelletier, «Pharmacological inhibition of
+						DNA-PK stimulates Cas9-mediated genome editing», Genome Med., т. 7, вып. 1, с. 93, дек. 2015.
+					</p>
+					<p>
+						[52]&nbsp;&nbsp; M. Gerlach и др., «Efficient Knock-in of a Point Mutation in Porcine Fibroblasts Using the
+						CRISPR/Cas9-GMNN Fusion Gene», Genes (Basel)., т. 9, вып. 6, с. 296, июн. 2018.
+					</p>
+					<p>
+						[53]&nbsp;&nbsp; D. Yang, M. A. Scavuzzo, J. Chmielowiec, R. Sharp, A. Bajic, и M. Borowiak, «Enrichment of
+						G2/M cell cycle phase in human pluripotent stem cells enhances HDR-mediated gene repair with customizable
+						endonucleases», Sci. Rep., т. 6, вып. 1, с. 21264, авг. 2016.
+					</p>
+					<p>
+						[54]&nbsp;&nbsp; L. Ye и др., «Programmable DNA repair with CRISPRa/i enhanced homology-directed repair
+						efficiency with a single Cas9», Cell Discov., т. 4, вып. 1, с. 46, дек. 2018.
+					</p>
+					<p>
+						[55]&nbsp;&nbsp; M. D. Canny и др., «Inhibition of 53BP1 favors homology-dependent DNA repair and increases
+						CRISPR–Cas9 genome-editing efficiency», Nat. Biotechnol., т. 36, вып. 1, сс. 95–102, ноя. 2017.
+					</p>
+					<p>
+						[56]&nbsp;&nbsp; M. V. Botuyan и др., «Mechanism of 53BP1 activity regulation by RNA-binding TIRR and a
+						designer protein», Nat. Struct. Mol. Biol., сс. 1–10, 2018.
+					</p>
+				</div>
+				<section class="article__adds">
+					<h3>Figures and Supplementary materials</h3>
+					<figure class="article__figures">
+						<img width=300 src="../images/index-header.jpg" alt="Some image">
+						<figcaption>Figure 1. Description of TIRR interactions</figcaption>
+					</figure><figure class="article__figures">
+						<img width=300 src="../images/index-header.jpg" alt="Some image">
+						<figcaption>Figure 2. Description of TIRR expression</figcaption>
+					</figure>
+					<div class="article__suppl">
+						<a href="#">Supplementary 1</a>
+						<a href="#">Supplementary 2</a>
+					</div>
+				</section>
+			</article>
+		</section>
+	</main>
+	<footer class="footer">
+		<p class="footer__copyright">Alexander Lavrov production &copy; 2020-2021</p>
+	</footer>
 </body>
 <!--script src='script.js'></script-->
+
 </html>

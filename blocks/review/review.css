@@ -1,0 +1,11 @@
+.review{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+	}
+
+@media all and (max-width: 540px) {
+  .review {
+    padding: 7px 0;
+  }
+}

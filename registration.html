@@ -12,9 +12,7 @@
 <body class="main-page">
 	<header>
 		<div class="overlay">
-			<h1 class="header__title">Journal of Everything<br>
-				<i>peer-reviewed</i>
-			</h1>
+			<h1 class="header__title header__title_small">Journal of Everything</h1>
 		</div>
 	</header>
 
@@ -24,45 +22,46 @@
 			<div class="registration__grouping-fields">
 				<input type="text" name="first-name" class="registration__input registration__input_first-name"
 					placeholder="First name" required>
-				<span class="popup__error-message first-name-error"></span>
+				<span class="error-message first-name-error"></span>
 				<input type="text" name="middle-name" class="registration__input registration__input_middle-name"
 					placeholder="Middle name">
-				<span class="popup__error-message middle-name-error"></span>
+				<span class="error-message middle-name-error"></span>
 			</div>
 			<input type="text" name="family-name" class="registration__input registration__input_family-name"
 				placeholder="Surname" required>
-			<span class="popup__error-message family-name-error"></span>
+			<span class="error-message family-name-error"></span>
 			<div class="registration__grouping-fields">
 				<input type="tel" name="mobile" class="registration__input registration__input_mobile"
 					placeholder="Mobile phone" required>
-				<span class="popup__error-message mobile-error"></span>
+				<span class="error-message mobile-error"></span>
 				<input type="email" name="email" class="registration__input registration__input_type_email" placeholder="E-mail"
 					required>
-				<span class="popup__error-message email-error"></span>
-			</div>
-			<div class="registration__grouping-fields">
-				<input type="password" name="password" class="registration__input registration__input_type_password"
-					placeholder="Password" minlength=6 required>
-				<span class="popup__error-message password-error"></span>
-				<input type="password" name="password" class="registration__input registration__input_type_password-repeated"
-					placeholder="Repeat password" minlength=6 required>
-				<span class="popup__error-message password-repeat-error"></span>
+				<span class="error-message email-error"></span>
 			</div>
 			<div class="registration__grouping-fields">
 				<input type="text" name="company" class="registration__input registration__input_type_company"
 					placeholder="Company/Institution">
-				<span class="popup__error-message company-error"></span>
-				<input type="text" name="degree" class="registration__input registration__input_type_degree"
-					placeholder="Academic degree" minlength=2>
-				<span class="popup__error-message degree-error"></span>
+				<span class="error-message company-error"></span>
+
 			</div>
 			<div class="registration__grouping-fields">
+				<input type="text" name="degree" class="registration__input registration__input_type_degree"
+					placeholder="Academic degree" minlength=2>
+				<span class="error-message degree-error"></span>
 				<input type="text" name="interests" class="registration__input registration__input_type_interests"
 					placeholder="Choose your area of expertise" required>
-				<span class="popup__error-message interests-error"></span>
-				<input type="text" name="keyword" class="registration__input registration__input_type_keyword"
+				<span class="error-message interests-error"></span>
+				<!--input type="text" name="keyword" class="registration__input registration__input_type_keyword"
 					placeholder="Enter keywords additional to expertise">
-				<span class="popup__error-message keyword-error"></span>
+				<span class="error-message keyword-error"></span-->
+			</div>
+			<div class="registration__grouping-fields">
+				<input type="password" name="password" class="registration__input registration__input_type_password"
+					placeholder="Password" minlength=6 required>
+				<span class="error-message password-error"></span>
+				<input type="password" name="password" class="registration__input registration__input_type_password-repeated"
+					placeholder="Repeat password" minlength=6 required>
+				<span class="error-message password-repeat-error"></span>
 			</div>
 			<label class="registration__checkbox-label">
 				<input type="checkbox" name="reviewer"

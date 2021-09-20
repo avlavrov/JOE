@@ -12,11 +12,10 @@
 <body class="main-page">
 	<header class="header">
 		<div class="overlay">
-			<h1 class="header__title">Journal of Everything<br>
-				<i>peer-reviewed</i>
-			</h1>
-			<p class="header__subtitle">Publish and read peer-reviewed scientific papers always for FREE.</p>
+			<h1 class="header__title">Journal of Everything</h1>
+			<p class="header__subtitle">Publish and read peer-reviewed scientific papers forever FREE.</p>
 			<button type="button" class="header__login-button">Login to publish</button>
+			<p class="header__subtitle">or scroll to read</p>
 		</div>
 	</header>
 	<nav class='menu'>
@@ -34,7 +33,7 @@
 		</section>
 	</main>
 	<footer class="footer">
-		<p class="footer__copyright">Alexander Lavrov production &copy; 2020</p>
+		<p class="footer__copyright">Alexander Lavrov production &copy; 2020-2021</p>
 	</footer>
 </body>
 <!-- Popups -->
@@ -44,10 +43,10 @@
 		<h2 class="popup__title">Enter login details</h2>
 		<form action="#" name="user-login" class="popup__form">
 			<input type="email" name="email" class="popup__input popup__input_type_email" placeholder="E-mail" required>
-			<span class="popup__error-message email-error"></span>
+			<span class="error-message email-error"></span>
 			<input type="password" name="password" class="popup__input popup__input_type_password"
 				placeholder="Password" minlength=6>
-			<span class="popup__error-message password-error"></span>
+			<span class="error-message password-error"></span>
 			<p class="popup__register-link">Don't have an account? <a href="./registration.html" class="popup__register-link">Register</a></p>
 			<button type="submit" class="popup__button popup__button_user-login">Login</button>
 		</form>
@@ -61,22 +60,22 @@
 		<form action="#" name="register" class="popup__form">
 				<input type="text" name="first-name" class="popup__input popup__input_first-name" placeholder="First name"
 					required>
-				<span class="popup__error-message first-name-error"></span>
+				<span class="error-message first-name-error"></span>
 				<input type="text" name="middle-name" class="popup__input popup__input_middle-name" placeholder="Middle name">
-				<span class="popup__error-message middle-name-error"></span>
+				<span class="error-message middle-name-error"></span>
 				<input type="text" name="family-name" class="popup__input popup__input_family-name" placeholder="Surname"
 					required>
-				<span class="popup__error-message family-name-error"></span>
+				<span class="error-message family-name-error"></span>
 				<input type="tel" name="mobile" class="popup__input popup__input_mobile" placeholder="Mobile phone" required>
-				<span class="popup__error-message mobile-error"></span>
+				<span class="error-message mobile-error"></span>
 				<input type="email" name="email" class="popup__input popup__input_type_email" placeholder="E-mail" required>
-				<span class="popup__error-message email-error"></span>
+				<span class="error-message email-error"></span>
 				<input type="password" name="password" class="popup__input popup__input_type_password" placeholder="Password"
 					minlength=6>
-				<span class="popup__error-message password-error"></span>
+				<span class="error-message password-error"></span>
 				<input type="password-repeated" name="password" class="popup__input popup__input_type_password-repeated"
 					placeholder="Repeat password" minlength=6>
-				<span class="popup__error-message password-repeat-error"></span>
+				<span class="error-message password-repeat-error"></span>
 
 			<p class="popup__register-link">By clicking Sign Up, you agree to our <a href="#"
 					class="popup__register-link">Terms</a>, <a href="#" class="popup__register-link">Data Policy</a> and <a

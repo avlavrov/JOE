@@ -1,0 +1,4 @@
+.article__suppl {
+  display: flex;
+  flex-direction: column;
+}

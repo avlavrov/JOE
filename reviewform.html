@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./pages/reviewform.css">
+	<link rel="icon" type="image" href="https://code.s3.yandex.net/web-code/rules-favicon.ico">
+	<title>JOE review</title>
+</head>
+
+<body class="main-page">
+	<header>
+		<nav class='menu'>
+			<a href='./index.html' class='menu-link'>Home</a>
+		</nav>
+		<div class="overlay">
+			<h1 class="header__title header__title_small">My review of the article</h1>
+		</div>
+	</header>
+
+	<main class="review">
+		<div class="review__header">
+			<p class="review__header-items">Review ID: <span>ar1234.1.1</span> </p>
+			<p class="review__header-items">Article ID: <span>a1234</span></p>
+			<p class="review__header-items">Article revision ID: <span>ar1234.1</span></p>
+			<p class="review__header-items">Submitted: <span>20.02.2020</span> </p>
+		</div>
+
+
+		<form action="#" name="article" class="article-submit__form">
+			<!-- Article title -->
+			<section>
+				<h2 class="review__title">TIRR: a potential front runner in HDR race − hypotheses and perspectives</h2>
+
+				<p class="article__abstract">The majority of CRISPR-Cas9 methods for mutations correction are oriented on gene
+					editing through homologous recombination that is normally restrained by non-homologous end joining (NHEJ). A
+					recently identified protein TIRR can bind a 53BP1 protein, a key effector of NHEJ, and inhibit its recruitment
+					to double-strand break loci. Several studies elucidated the molecular mechanisms of TIRR-53BP1 binding and
+					established bidirectional role of TIRR in 53BP1 functions and stability. It was proved that overexpression of
+					TIRR promotes the double-strand break repair through homologous recombination. All findings, which were
+					described in the review, allow assuming TIRR as a suitable target for enhancing efficacy of genome editing
+					through homology directed repair.</p>
+			</section>
+			<!-- Fulltext of the article revision -->
+			<textarea type="text" name="fulltext" class="article-submit__input article-submit__input_fulltext"
+				placeholder="PDF viewer is here with the pdf of the submitted article"
+				minlength="2000" required></textarea>
+				<button class="submit-button">Download article</button>
+				<button class="submit-button">Download Supp</button>
+				<fieldset>
+					<label class="article-submit__checkbox-label">
+						<input type="radio" name="nopersonaldata"
+							class="article-submit__checkbox article-submit__input_nopersonaldata" required>
+						<span>I confirm, that I don't know authors. All personal information was removed from the article and supplementary data.</span>
+
+					</label>
+					<label class="article-submit__checkbox-label">
+						<input type="radio" name="nopersonaldata"
+							class="article-submit__checkbox article-submit__input_nopersonaldata" required>
+						<span>I know the author(s). Here is how I got this information:</span>
+						<input type="text" name="ethics" class="article-submit__input registration__input_ethics"
+					placeholder="Describe here how you've got the authors known" required>
+				<span class="error-message ethics-error">Describe how you get the information about authorship</span>
+					</label>
+				</fieldset>
+				<span class="error-message nopersonaldata-error">Confirm that your review is blind</span>
+
+				<!-- Ethic statement -->
+				<label class="article-submit__checkbox-label">
+					<input type="checkbox" name="ethic-check" class="article-submit__checkbox registration__input_ethic-check">
+					<span>I confirm that the submitted article describes ehtically approved research. If no, please clarify:</span>
+				</label>
+				<input type="text" name="ethics" class="article-submit__input registration__input_ethics"
+					placeholder="Clarify your concerns about ethical approval" required>
+				<span class="error-message ethics-error">Confirm ethics</span>
+
+
+			<!-- Review -->
+			<textarea type="text" name="review" class="article-submit__input article-submit__input_fulltext"
+				placeholder="Enter your review here"
+				minlength="2000" required></textarea>
+			<span class="error-message fulltext-error">Full text should be at least 2000 symbols</span>
+			<!-- Upload fulltext -->
+			<label>Your decision:
+				<select name="article-type" class="article-submit__input registration__input_article_level" size="1" required>
+					<option value="unknown">---</option>
+					<option value="Reject">Reject the article. It cannot be published as scientfic paper</option>
+					<option value="Revise">Revise the article with my comments. It can be accepted or rejected based on the author's answer</option>
+					<option value="Accept">Accept the article. I confirm that this article can be published as scientific paper</option>
+				</select>
+				<span class="error-message article-type-error">Enter your decision</span>
+			</label>
+
+			<!-- Article type, field, keywords etc -->
+			<label class="">Article type suggested by author: <i>Original research</i>. Choose your suggestion:
+				<select name="article-type" class="article-submit__input registration__input_article_type" size="1" required>
+					<option value="unknown">---</option>
+					<option value="review">Review</option>
+					<option value="original">Original research</option>
+					<option value="case">Case report</option>
+					<option value="idea">Idea, hypotheses</option>
+				</select>
+				<span class="error-message article-type-error">Choose article type</span>
+			</label>
+			<label class="">Article rating suggested by author: <i>Breakthrough</i>. Choose your suggestion:
+				<select name="article-type" class="article-submit__input registration__input_article_level" size="1" required>
+					<option value="unknown">---</option>
+					<option value="breakthrough">5 - State of the art science</option>
+					<option value="regular">3 - Regular research, review, case report</option>
+					<option value="repeat">1 - Fair repeat, small experiment, short review, letter, opnion</option>
+				</select>
+				<span class="error-message article-type-error">Choose article type</span>
+			</label>
+			<label>Areas selected by author: <i>Astronomy; Genome editing; Psychology</i>. You may suggest additional areas:
+				<input type="list" name="category" class="article-submit__input registration__input_category"
+				placeholder="Area, field of science" required>
+			<span class="error-message password-error"></span>
+			</label>
+
+
+			<p class="registration__notice">By submitting a review, you agree that all your comments will be sent to the author, except your personal data and information if you know the author.</p>
+			<button type="submit" class="submit-button">Submit</button>
+		</form>
+	</main>
+	<footer class="footer">
+		<p class="footer__copyright">Alexander Lavrov production &copy; 2020</p>
+	</footer>
+</body>
+<script type='module' src="./scripts/registration.js"></script>
+
+</html>

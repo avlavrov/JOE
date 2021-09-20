@@ -1,0 +1,31 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/normalize-additional.css);
+@import url(../blocks/main-page.css);
+@import url(../blocks/submitt-button/submitt-button.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__title/header__title.css);
+@import url(../blocks/header/__title/_small/header__title_small.css);
+@import url(../blocks/header/__subtitle/header__subtitle.css);
+@import url(../blocks/header/__login-button/header__login-button.css);
+@import url(../blocks/overlay/overlay.css);
+@import url(../blocks/menu/menu.css);
+@import url(../blocks/menu-link/menu-link.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/content/__cards/content__cards.css);
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/error-message/error-message.css);
+/* Footer */
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+/* Main */
+@import url(../blocks/review/review.css);
+@import url(../blocks/review/__header/reivew__header.css);
+@import url(../blocks/review/__header-items/review__header-items.css);
+@import url(../blocks/article-submit/__input_abstract/registration__input_abstract.css);
+@import url(../blocks/article-submit/__form/article-submit__form.css);
+@import url(../blocks/article-submit/__input/article-submit__input.css);
+@import url(../blocks/article-submit/__input/_types/article-submit__input_types.css);
+@import url(../blocks/review/__checkbox-label/review__checkbox-label.css);
+@import url(../blocks/submit-button/submit-button.css);
+@import url(..);
+@import url(..);

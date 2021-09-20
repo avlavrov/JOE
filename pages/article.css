@@ -10,19 +10,11 @@
 @import url(../blocks/menu-link/menu-link.css);
 @import url(../blocks/content/content.css);
 @import url(../blocks/content/__cards/content__cards.css);
-@import url(../blocks/cards/cards.css);
-/* Card */
-@import url(../blocks/card/card.css);
-@import url(../blocks/card/__contents/card__contents.css);
-@import url(../blocks/card/__header/card__header.css);
-@import url(../blocks/card/__article-date/card__article-date.css);
-@import url(../blocks/card/__article-type/card__article-type.css);
-@import url(../blocks/card/__link/card__link.css);
-@import url(../blocks/card/__image/card__image.css);
-@import url(../blocks/card/__authors/card__authors.css);
-@import url(../blocks/card/__authors-aff/card__authors-aff.css);
-@import url(../blocks/card/__text/card__text.css);
-@import url(../blocks/card/__title/card__title.css);
+@import url(../blocks/article/__content/article__content.css);
+@import url(../blocks/article/__adds/article__adds.css);
+@import url(../blocks/article/__suppl/article__suppl.css);
+
+
 /* Footer */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);

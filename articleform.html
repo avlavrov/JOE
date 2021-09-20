@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./pages/articleform.css">
+	<link rel="icon" type="image" href="https://code.s3.yandex.net/web-code/rules-favicon.ico">
+	<title>JOE submission</title>
+</head>
+
+<body class="main-page">
+	<header>
+		<div class="overlay">
+			<h1 class="header__title header__title_small">My submission to JOE</h1>
+		</div>
+		<nav class='menu'>
+			<a href='./index.html' class='menu-link'>Home</a>
+		</nav>
+	</header>
+
+	<main class="article-submit">
+		<div class="article-submit__header">
+			<p class="article-submit__header-items">Article ID: <span>articleID</span></p>
+			<p class="article-submit__header-items">Article revision ID: <span>articleRevisionID</span></p>
+			<p class="article-submit__header-items">Submitted: <span>SubmitDate</span> </p>
+			<p class="article-submit__header-items">Last access: <span>LastAccessDate</span> </p>
+		</div>
+		<h3 class="">Fill all the fields</h3>
+
+		<form action="#" name="article" class="article-submit__form">
+			<!-- Article title -->
+			<input type="text" name="title" class="article-submit__input article-submit__input_title"
+				placeholder="Article title" required>
+			<span class="error-message">Please enter article title</span>
+			<!-- Authors -->
+			<div>
+				<p>
+					Type author's ID, email or name to choose from registered authors. Use "Add author" button to add a new
+					author.
+				</p>
+				<input type="text" name="authors" class="article-submit__input article-submit__input_authors"
+					placeholder="Alexander Submitting Author 1,2,3" required>
+				<button type="button" class="submit-button">Add author</button>
+			</div>
+			<!-- Affiliations -->
+			<div>
+				<p>
+					Affiliations. To change affiliations, click author(s) in the field above and correct information.
+				</p>
+				<input type="text" name="authors" class="article-submit__input article-submit__input_authors"
+					placeholder="1 - MIT, 2 - Hardvard, 3 - RCMG" required>
+			</div>
+
+			<!--div class="oj"> FROM GMAIL field "To"
+				<div class="wO nr l1">
+					<input class="">
+					<div class="vR">
+						<span class="" email="nina.pusikova@innoway.ru" data-hovercard-id="nina.pusikova@innoway.ru" data-hovercard-owner-id="123">
+							<div translate="no" class="vT">Nina Pusikova</div>
+						</span>
+						<input name="to" type="hidden" value="Nina Pusikova <nina.pusikova@innoway.ru>">
+					</div>
+					<textarea rows="1" id=":4bl" class="vO" name="to" spellcheck="false" autocomplete="false" autocapitalize="off"
+						autocorrect="off" tabindex="1" dir="ltr" aria-label="Кому" role="combobox" aria-autocomplete="list"
+						style="width: 159px;"></textarea>
+					<div class="aA6"></div>
+				</div>
+			</div-->
+
+			<!-- Abstract -->
+			<textarea type="text" name="abstract" class="article-submit__input article-submit__input_abstract"
+				placeholder="Enter abstract here" required minlength="500" maxlength="2000"></textarea>
+			<span class="error-message abstract-error">Abstract should be 500-2000 symbols</span>
+			<!-- Fulltext -->
+			<textarea type="text" name="fulltext" class="article-submit__input article-submit__input_fulltext"
+				placeholder="Enter main text here. Don't use tables, formulas and figures. Keep them in the .doc(x) file only."
+				minlength="2000" required></textarea>
+			<span class="error-message fulltext-error">Full text should be at least 2000 symbols</span>
+			<!-- Upload fulltext -->
+			<label class="article-submit__fulltext">Upload full text in doc(x) format
+				<input type="file" name="docx" class="article-submit__input article-submit__input_docx" required>
+			</label>
+			<span class="error-message docx-error">Upload the file</span>
+			<label class="article-submit__checkbox-label">
+				<input type="checkbox" name="nopersonaldata"
+					class="article-submit__checkbox article-submit__input_nopersonaldata" required>
+				<span>I confirm that I've cleared all deanonimazing data from the article text incuding author names and
+					affiliations.</span>
+			</label>
+			<span class="error-message nopersonaldata-error">Confirm that there are no names in the text</span>
+			<!-- Upload supplementary -->
+			<label class="article-submit__fulltext">Upload supplementary file(s) of any kind: pdf, video, audio, doc(x),
+				xls(x) etc except executable files
+				<input type="file" name="supplement" class="article-submit__input article-submit__input_supplement">
+				<label class="article-submit__checkbox-label">
+					<input type="checkbox" name="nopersonaldata"
+						class="article-submit__checkbox article-submit__input_nopersonaldata" required>
+					<span>I confirm that I've cleared all deanonimazing data from the supplementary files.</span>
+				</label>
+			</label>
+			<!-- Ethic statement -->
+			<label class="article-submit__checkbox-label">
+				<input type="checkbox" name="ethic-check" class="article-submit__checkbox registration__input_ethic-check">
+				<span>I confirm that the submitted article describes ehtically approved research</span>
+			</label>
+			<input type="text" name="ethics" class="article-submit__input registration__input_ethics"
+				placeholder="State clearly if your research was approved by ethic comitee" required>
+			<span class="error-message ethics-error">Confirm ethics</span>
+			<input type="text" name="conflict" class="article-submit__input registration__input_conflict"
+				placeholder="Conflict of interests disclosure">
+			<span class="error-message conflict-error">Conflict of interests statement</span>
+			<input type="text" name="author-input" class="article-submit__input registration__input_author-input"
+				placeholder="Describe input of each author.">
+			<span class="error-message author-input-error">Authors' input</span>
+			<!-- Article type, field, keywords etc -->
+			<label class="">Article type
+				<select name="article-type" class="article-submit__input registration__input_article_type" size="1" required>
+					<option value="unknown">---</option>
+					<option value="review">Review</option>
+					<option value="original">Original research</option>
+					<option value="case">Case report</option>
+					<option value="idea">Idea, hypotheses</option>
+				</select>
+				<span class="error-message article-type-error">Choose article type</span>
+			</label>
+			<label class="">Article rating
+				<select name="article-type" class="article-submit__input registration__input_article_level" size="1" required>
+					<option value="unknown">---</option>
+					<option value="breakthrough">5 - State of the art science</option>
+					<option value="regular">3 - Regular research, review, case report</option>
+					<option value="repeat">1 - Fair repeat, small experiment, short review, letter, opnion</option>
+				</select>
+				<span class="error-message article-type-error">Choose article type</span>
+			</label>
+			<input type="list" name="category" class="article-submit__input registration__input_category"
+				placeholder="Area, field of science. Start typing and choose up to 5 terms. The order of terms will be used to find the reviewers"
+				required>
+			<span class="error-message password-error"></span>
+
+			<p class="registration__notice">By submitting an article, you agree that it will be sent for the review to other
+				researchers.</p>
+			<button type="submit" class="submit-button">Submit</button>
+		</form>
+	</main>
+	<footer class="footer">
+		<p class="footer__copyright">Alexander Lavrov production &copy; 2020</p>
+	</footer>
+</body>
+<script type='module' src="./scripts/registration.js"></script>
+
+</html>
